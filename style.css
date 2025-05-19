@@ -35,7 +35,7 @@ body{
 }
 
 .navbar{
-  box-shadow: 0 5px 10px 0 #aaa;
+  box-shadow: 0 5px 7px 0 #aaa;
   position: fixed;
   width: 100%;
   background-color: #fff;
@@ -46,9 +46,34 @@ body{
 
 .nav_container{
   display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
 }
 
-
-.nav_container h1{
+.nav_container .logo{
   order: -1;
+  font-size: 3rem;
+}
+
+.nav_container .menu-items{
+  display: flex;
+  list-style: none;
+}
+
+.nav_container .menu-items li{
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.nav_container .menu-items li a{
+  color: #444;
+  text-decoration: none;
+  /* font-weight: 500; */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_container .menu-items li a:hover{
+  color: #117964;
 }

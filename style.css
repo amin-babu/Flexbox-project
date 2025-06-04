@@ -176,11 +176,11 @@ body{
 .about_img{
   flex: 1 1 400px;
   padding: 30px;
-  animation: about-img-anim 1s ease-in-out forwards;
+  animation: about-img 1s ease-in-out forwards;
   transform: translateX(150%);
 }
 
-@keyframes about-img-anim{
+@keyframes about-img{
   100%{
     transform: translateX(0);
   }
@@ -190,15 +190,17 @@ body{
   flex: 1 1 400px;
   padding: 30px;
   margin: auto;
-  animation: about-text-anim 1s ease-in-out forwards;
+  animation: about-text 1s ease-in-out forwards;
   transform: translateX(-150%);
 }
 
-@keyframes about-text-anim{
+@keyframes about-text{
   100%{
     transform: translateX(0);
   }
 }
+
+
 
 .about_img img{
   display: block;
